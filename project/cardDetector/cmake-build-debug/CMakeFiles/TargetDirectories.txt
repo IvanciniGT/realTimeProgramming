@@ -1,0 +1,3 @@
+/Users/ivan/CLionProjects/cardDetector/cmake-build-debug/CMakeFiles/cardDetector.dir
+/Users/ivan/CLionProjects/cardDetector/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivan/CLionProjects/cardDetector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
