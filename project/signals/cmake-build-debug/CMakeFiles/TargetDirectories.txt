@@ -1,0 +1,4 @@
+/Users/ivan/CLionProjects/signals/cmake-build-debug/CMakeFiles/signals.dir
+/Users/ivan/CLionProjects/signals/cmake-build-debug/CMakeFiles/signals2.dir
+/Users/ivan/CLionProjects/signals/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivan/CLionProjects/signals/cmake-build-debug/CMakeFiles/rebuild_cache.dir
