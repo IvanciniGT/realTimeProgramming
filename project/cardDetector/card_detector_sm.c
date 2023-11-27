@@ -23,7 +23,7 @@ CardDetectionState get_next_state(CardDetectionState currentState, CardDetection
             switch (event) {
                 case POSITIVE_DETECTION: return ON_NEGATIVE;
                 case FAILURE_DETECTION: return FAILURE;
-                case SYSTEM_SHUTDOWN: return OFF;
+                case SYSTEM_TURN_OFF: return OFF;
                 default: break;
             }
             break;
@@ -48,26 +48,29 @@ bool can_transition_be_executed(CardDetectionState current_state, CardDetectionS
 int transition_to(CardDetectionState *current_state, CardDetectionStateTransition transition) {
     if (!can_transition_be_executed(*current_state, transition)) {
         printf("Invalid transition. State remains unchanged.\n");
-        return -1;  // Early return on invalid transition
+        return 1;  // Early return on invalid transition
     }
     switch (transition) {
         case SYSTEM_TURN_ON:
-            printf("System is turned on\n");
+            // The transition will have a set of actions that need to be executed... associated to the transition
+            printf("We will tell check the components and tell the sensor to turn on\n");
             break;
         case POSITIVE_DETECTION:
-            printf("Positive detection\n");
+            //printf("Positive detection\n");
             break;
         case NEGATIVE_DETECTION:
-            printf("Negative detection\n");
+            //printf("Negative detection\n");
             break;
-        case SYSTEM_SHUTDOWN:
-            printf("System is shutting down\n");
+        case SYSTEM_TURN_OFF:
+            printf("We will tell the sensor to turn off\n");
             break;
         case FAILURE_DETECTION:
-            printf("Failure detected\n");
+            //printf("Failure detected\n");
+            // We could set a task to monitor the failure... that could be executed each certain amount of time
+            // Case the monitor task detects that the failure is solved, it will call the transition FAILURE_SOLVED
             break;
         case FAILURE_SOLVED:
-            printf("Failure solved\n");
+            //printf("Failure solved\n");
             break;
         default:
             break;

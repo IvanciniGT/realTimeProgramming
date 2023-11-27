@@ -293,3 +293,52 @@ Are we going to manufacture the doors engine? Probably not...
 
 - Smoke tests
 - Regression tests
+
+
+---
+
+
+Main System process, when it arrives to state: ON
+will send a RT_SIGNAL to the Card detection process: 1
+
+Then the card detection process will process that signal.
+It should change it status... so that now it will be started (turn on)
+And it may need to send an interrupt, so that a hardware component starts working (the card sensor).
+  Usually here the card sensor is going to be provided by a third party... That third party will provide us with a library (driver) to interact with that sensor.
+  That library... internally is the one that is going to send the interrupt to the card sensor... to start working.
+  We will just call the appropriate function of that library... to start the card sensor.
+  A different thing is if we are designing our own card sensor... then we will have to send the interrupt to the card sensor... to start working.
+
+When the card sensor detects a card... it will send an interrupt to the card detection process.
+
+
+---
+
+We a have a C program that is running thru a process on a computer.
+
+That program can fork a new process... that means:
+- A new process will be created by the OS... having a new pid
+- That new process will be a copy of the original process... 
+  - it will execute the same code... starting from the same point (where the fork was called)
+  - but it will have its own memory space.... its own variables / data in memory
+- The fork function returns an Integer.
+  - The original process will receive the pid of the new process
+  - The new process will receive 0
+
+CODE OF THE PROGRAM:
+LINE 1: pid=fork(); < Both threas (each thread belonging to a different process) will continue executing from this point (the return of the fork function.)
+LINE 2: if(pid==0) { // Child process
+LINE 3:    print("I am the child process");
+LINE 4: } else { // Parent process
+LINE 5:    print("I am the parent process");
+LINE 6: }
+
+WHEN I EXECUTE FROM THE OS THE PROGRAM:
+- The OS will create a new process... with pid=1234
+- That process will have its own thread of execution... starting from line 1... calling the fork function
+- The fork function will create a new process with pid=5678... and ppid=1234
+- That forked process will have its own thread of execution... starting at the same point the fork was called
+
+We would want to fork a new process... when we want to execute a different task/program/software... that is not related to the task that the original process is executing.
+
+It is a way of creating a new process... that is not related to the original process.... in C language.

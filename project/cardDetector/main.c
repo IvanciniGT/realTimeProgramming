@@ -3,8 +3,6 @@
 
 int main() {
     printf("Card Detector Subsystem\n");
-    turn_on();
-    // Send signal to this process
-
-    return 0;
+    int response = turn_on();
+    return response;
 }

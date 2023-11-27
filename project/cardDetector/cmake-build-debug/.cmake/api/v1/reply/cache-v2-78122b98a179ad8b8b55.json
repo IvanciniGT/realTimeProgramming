@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ivan/CLionProjects/cardDetector/cmake-build-debug"
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -383,7 +383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivan/CLionProjects/cardDetector/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ivan/CLionProjects/cardDetector"
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1015,7 +1015,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivan/CLionProjects/cardDetector/cmake-build-debug"
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug"
 		},
 		{
 			"name" : "cardDetector_IS_TOP_LEVEL",
@@ -1039,7 +1039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivan/CLionProjects/cardDetector"
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
 		}
 	],
 	"kind" : "cache",

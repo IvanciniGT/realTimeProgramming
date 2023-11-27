@@ -9,5 +9,9 @@
 
 extern CardDetectionState current_state;
 int turn_on();
-
+int turn_off();
+int positive_detection();
+int negative_detection();
+int failure_detection();
+int failure_solved();
 #endif //CARDDETECTOR_CARD_DETECTOR_H

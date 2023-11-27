@@ -15,7 +15,7 @@ typedef enum {
     SYSTEM_TURN_ON,
     POSITIVE_DETECTION,
     NEGATIVE_DETECTION,
-    SYSTEM_SHUTDOWN,
+    SYSTEM_TURN_OFF,
     FAILURE_DETECTION,
     FAILURE_SOLVED
 } CardDetectionStateTransition;

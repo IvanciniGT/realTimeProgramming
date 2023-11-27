@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ivan/CLionProjects/cardDetector/cmake-build-debug",
-		"source" : "/Users/ivan/CLionProjects/cardDetector"
+		"build" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug",
+		"source" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
 	},
 	"version" : 
 	{

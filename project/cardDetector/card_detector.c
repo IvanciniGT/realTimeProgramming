@@ -4,28 +4,35 @@
 
 CardDetectionState current_state = OFF;
 
-// turn on the system
-int turn_on() { // When this function is going to be executed? We will be listening to a signal from the other system
-    // Should we turn on the system? We will check the current state... and if that transition is valid
-    CardDetectionStateTransition transition = SYSTEM_TURN_ON;
-
-    // Is protecting myself from external bugs
-    // If the one who is emiting the signal is working properly, this method ios always going to return true
-    // The thing is that we don't know if the other system is working properly- I'm doing my thing.
-    // And I have to make sure that nobody is going to mess with me
-    // TODO: Think about how many thread are gonna be able to execute this code at the same time.
-    //       That could lead to a problem
+int change_state_when_possible(CardDetectionStateTransition transition) {
+    int turn_on_result = 1;
     if (can_transition_be_executed(current_state, transition)) {
-        // If the transition is valid, we will execute the transition
-        printf("Card Detector is turning on\n");
-        int turn_on_result = transition_to(&current_state, transition);
-        if (turn_on_result == -1) {
-            printf("Error turning on the Card Detector\n");
-            return -1;
-        } else {
-            printf("Card Detector is on\n");
-            return 0;
-        }
+        turn_on_result = transition_to(&current_state, transition);
     }
-    return 0;
+    return turn_on_result;
+}
+
+// turn on the system
+int turn_on() {
+    return change_state_when_possible(SYSTEM_TURN_ON);
+}
+
+int turn_off() {
+    return change_state_when_possible(SYSTEM_TURN_OFF);
+}
+
+int positive_detection() {
+    return change_state_when_possible(POSITIVE_DETECTION);
+}
+
+int negative_detection() {
+    return change_state_when_possible(NEGATIVE_DETECTION);
+}
+
+int failure_detection() {
+    return change_state_when_possible(FAILURE_DETECTION);
+}
+
+int failure_solved() {
+    return change_state_when_possible(FAILURE_SOLVED);
 }
