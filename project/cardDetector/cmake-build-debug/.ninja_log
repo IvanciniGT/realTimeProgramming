@@ -1,17 +1,6 @@
 # ninja log v5
-1	66	1701103623783453709	CMakeFiles/cardDetector.dir/card_detector.c.o	f832e58a1bead011
-1	66	1701103623782738018	CMakeFiles/cardDetector.dir/main.c.o	ea7515d58271c4e2
-66	142	1701103623860298420	cardDetector	9e86d2494e9aeeb9
-1	145	1701103510688606952	CMakeFiles/cardDetector.dir/card_detector_sm.c.o	350341089d83bdff
-1	134	1701109500952086144	CMakeFiles/cardDetector.dir/main.c.o	dcaebf56de00d844
-2	135	1701109500952031061	CMakeFiles/cardDetector.dir/card_detector.c.o	159ef49d57c0b9a4
-2	143	1701109500961625178	CMakeFiles/cardDetector.dir/card_detector_sm.c.o	80aa7a6d795f9a8d
-143	252	1701109501073015350	cardDetector	9e86d2494e9aeeb9
-0	12	0	clean	3c8e6cc385ee00ba
-1	102	1701109516352838253	CMakeFiles/cardDetector.dir/card_detector.c.o	159ef49d57c0b9a4
-1	103	1701109516356984852	CMakeFiles/cardDetector.dir/card_detector_sm.c.o	80aa7a6d795f9a8d
-0	103	1701109516354664995	CMakeFiles/cardDetector.dir/main.c.o	dcaebf56de00d844
-103	213	1701109516470098228	cardDetector	9e86d2494e9aeeb9
-1	105	1701109735709835048	CMakeFiles/cardDetector.dir/main.c.o	dcaebf56de00d844
 1	106	1701109735710514251	CMakeFiles/cardDetector.dir/card_detector.c.o	159ef49d57c0b9a4
+1	105	1701109735709835048	CMakeFiles/cardDetector.dir/main.c.o	dcaebf56de00d844
 106	217	1701109735820438709	cardDetector	9e86d2494e9aeeb9
+1	103	1701109516356984852	CMakeFiles/cardDetector.dir/card_detector_sm.c.o	80aa7a6d795f9a8d
+0	12	0	clean	3c8e6cc385ee00ba

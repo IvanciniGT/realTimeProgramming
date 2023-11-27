@@ -7,4 +7,7 @@ add_executable(cardDetector main.c
         card_detector_sm.h
         card_detector_sm.c
         card_detector.h
-        card_detector.c)
+        card_detector.c
+        card_detector_signals.c
+        card_detector_heartbeat.c
+        card_detector_heartbeat.h)
