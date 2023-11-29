@@ -79,6 +79,12 @@ build CMakeFiles/cardDetector.dir/card_detector_heartbeat.c.o: C_COMPILER__cardD
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir
 
+build CMakeFiles/cardDetector.dir/NOT_HERE_card_validation_process.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/NOT_HERE_card_validation_process.c || cmake_object_order_depends_target_cardDetector
+  DEP_FILE = CMakeFiles/cardDetector.dir/NOT_HERE_card_validation_process.c.o.d
+  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/cardDetector.dir
+  OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cardDetector
@@ -87,7 +93,7 @@ build CMakeFiles/cardDetector.dir/card_detector_heartbeat.c.o: C_COMPILER__cardD
 #############################################
 # Link the executable cardDetector
 
-build cardDetector: C_EXECUTABLE_LINKER__cardDetector_Debug CMakeFiles/cardDetector.dir/main.c.o CMakeFiles/cardDetector.dir/card_detector_sm.c.o CMakeFiles/cardDetector.dir/card_detector.c.o CMakeFiles/cardDetector.dir/card_detector_signals.c.o CMakeFiles/cardDetector.dir/card_detector_heartbeat.c.o
+build cardDetector: C_EXECUTABLE_LINKER__cardDetector_Debug CMakeFiles/cardDetector.dir/main.c.o CMakeFiles/cardDetector.dir/card_detector_sm.c.o CMakeFiles/cardDetector.dir/card_detector.c.o CMakeFiles/cardDetector.dir/card_detector_signals.c.o CMakeFiles/cardDetector.dir/card_detector_heartbeat.c.o CMakeFiles/cardDetector.dir/NOT_HERE_card_validation_process.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   POST_BUILD = :

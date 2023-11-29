@@ -98,11 +98,11 @@ int shutdown_system() {
 }
 
 // We will receive a call to this function from the sensor driver
-int positive_detection(const u_int8_t carId[CARD_ID_SIZE]){
+int positive_detection(const u_int8_t cardId[CARD_ID_SIZE]){
     // Make sure that only we can access the shared memory to store the cardId
     pthread_mutex_lock(&shared_data->mutex); // Let's get a lock on the mutex
     // We want to store the cardId in the shared memory
-    memccpy(shared_data->card_id, carId, 0, CARD_ID_SIZE);
+    memccpy(shared_data->card_id, cardId, 0, CARD_ID_SIZE);
     shared_data->flag = 1;
     pthread_mutex_unlock(&shared_data->mutex); // Let's release the lock on the mutex
     // We want to notify the card detector process that we have a new cardId in the shared memory

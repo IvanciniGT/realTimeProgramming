@@ -10,4 +10,5 @@ add_executable(cardDetector main.c
         card_detector.c
         card_detector_signals.c
         card_detector_heartbeat.c
-        card_detector_heartbeat.h)
+        card_detector_heartbeat.h
+        NOT_HERE_card_validation_process.c)
