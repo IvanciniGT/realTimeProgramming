@@ -53,7 +53,8 @@ int transition_to(CardDetectionState *current_state, CardDetectionStateTransitio
     switch (transition) {
         case SYSTEM_TURN_ON:
             // The transition will have a set of actions that need to be executed... associated to the transition
-            printf("We will tell check the components and tell the sensor to turn on\n");
+            printf("We will check the components and tell the sensor to turn on\n");
+            // Driver code(message) to turn on the sensor
             break;
         case POSITIVE_DETECTION:
             //printf("Positive detection\n");

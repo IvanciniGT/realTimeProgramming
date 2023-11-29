@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #include "card_detector.h"
 #include "card_detector_signals.h"
 #include "card_detector_heartbeat.h"
 
 struct timespec const VITALITY_FREQUENCY = {0, 100000000}; // 100ms
-int main() {
-    pid_t parentProcessId ; // We will read this information from the command line arguments
-    printf("Card Detector Subsystem\n");
+
+int main(int argc, char *argv[]) {
+    // We need to know the parent process id
+    if(argc != 2) {
+        printf("Usage: %s <parent_process_id>\n", argv[0]);
+        return 1;
+    }
+    long inputPid = strtol(argv[1], NULL, 10);
+    pid_t parentProcessId = (pid_t) inputPid;
+    printf("Initializing card detector with parent process id: %d\n", parentProcessId);
+    init_system();
     // The parent process is gonna be able to communicate with this process through signals
     configure_signal_handlers();
+    printf("System initialized\n");
+
     // Are we going to send any information (to communicate) to the parent process?
     while(true) {
         // Heartbeat: Hey... I'm alive... and I'm doing my job
