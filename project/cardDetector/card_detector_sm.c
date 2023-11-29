@@ -5,10 +5,11 @@
 
 CardDetectionState get_next_state(CardDetectionState currentState, CardDetectionStateTransition event) {
     switch (currentState) {
-        case OFF:
+        case TURNED_OFF:
             switch (event) {
                 case SYSTEM_TURN_ON: return ON_NEGATIVE;
                 case FAILURE_DETECTION: return FAILURE;
+                case SHUTDOWN: return SHUTTING_DOWN;
                 default: break;
             }
             break;
@@ -16,6 +17,7 @@ CardDetectionState get_next_state(CardDetectionState currentState, CardDetection
             switch (event) {
                 case NEGATIVE_DETECTION: return ON_NEGATIVE;
                 case FAILURE_DETECTION: return FAILURE;
+                case SHUTDOWN: return SHUTTING_DOWN;
                 default: break;
             }
             break;
@@ -23,15 +25,19 @@ CardDetectionState get_next_state(CardDetectionState currentState, CardDetection
             switch (event) {
                 case POSITIVE_DETECTION: return ON_NEGATIVE;
                 case FAILURE_DETECTION: return FAILURE;
-                case SYSTEM_TURN_OFF: return OFF;
+                case SYSTEM_TURN_OFF: return TURNED_OFF;
+                case SHUTDOWN: return SHUTTING_DOWN;
                 default: break;
             }
             break;
         case FAILURE:
             switch (event) {
-                case FAILURE_SOLVED: return OFF;
+                case FAILURE_SOLVED: return TURNED_OFF;
+                case SHUTDOWN: return SHUTTING_DOWN;
                 default: break;
             }
+            break;
+        case SHUTTING_DOWN:
             break;
     }
 
@@ -56,12 +62,6 @@ int transition_to(CardDetectionState *current_state, CardDetectionStateTransitio
             printf("We will check the components and tell the sensor to turn on\n");
             // Driver code(message) to turn on the sensor
             break;
-        case POSITIVE_DETECTION:
-            //printf("Positive detection\n");
-            break;
-        case NEGATIVE_DETECTION:
-            //printf("Negative detection\n");
-            break;
         case SYSTEM_TURN_OFF:
             printf("We will tell the sensor to turn off\n");
             break;
@@ -70,9 +70,15 @@ int transition_to(CardDetectionState *current_state, CardDetectionStateTransitio
             // We could set a task to monitor the failure... that could be executed each certain amount of time
             // Case the monitor task detects that the failure is solved, it will call the transition FAILURE_SOLVED
             break;
-        case FAILURE_SOLVED:
             //printf("Failure solved\n");
             break;
+        case SHUTDOWN:
+            printf("We will stop this program\n");
+            // TODO
+            break;
+        case POSITIVE_DETECTION:
+        case NEGATIVE_DETECTION:
+        case FAILURE_SOLVED:
         default:
             break;
     }

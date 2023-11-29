@@ -5,6 +5,7 @@
 
 int const TURN_ON_SIGNAL= SIGUSR1; //SIGRTMIN + 0;
 int const TURN_OFF_SIGNAL= SIGUSR2; //SIGRTMIN + 1;
+int const SHUTDOWN_SIGNAL= SIGQUIT;
 
 void turn_on_signal_handler(int signo, siginfo_t *info, void *extra) {
     // We are just using a signal to expose a function to another process
@@ -14,8 +15,13 @@ void turn_on_signal_handler(int signo, siginfo_t *info, void *extra) {
     // In any of those I would do that check... So I prefer to keep thet check in the function (turn_on)
     turn_on();
 }
+
 void turn_off_signal_handler(int signo, siginfo_t *info, void *extra) {
     turn_off();
+}
+
+void shutdown_signal_handler(int signo, siginfo_t *info, void *extra) {
+    shutdown_system();
 }
 
 
@@ -29,4 +35,9 @@ void configure_signal_handlers() {
     turn_off_action.sa_sigaction = turn_off_signal_handler;
     turn_off_action.sa_flags = SA_SIGINFO;           // Use the extended signal handler... in order to get the PID of the sender
     sigaction(TURN_OFF_SIGNAL, &turn_off_action, NULL);
+
+    struct sigaction shutdown_action;
+    shutdown_action.sa_sigaction = shutdown_signal_handler;
+    shutdown_action.sa_flags = SA_SIGINFO;           // Use the extended signal handler... in order to get the PID of the sender
+    sigaction(SHUTDOWN_SIGNAL, &shutdown_action, NULL);
 }

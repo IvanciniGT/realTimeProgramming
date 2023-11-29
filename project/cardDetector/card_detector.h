@@ -17,4 +17,5 @@ int positive_detection(const u_int8_t carId[CARD_ID_SIZE]);
 int negative_detection();
 int failure_detection();
 int failure_solved();
+int shutdown_system();
 #endif //CARDDETECTOR_CARD_DETECTOR_H

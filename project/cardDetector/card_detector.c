@@ -16,10 +16,19 @@ struct SharedData {
     pthread_mutex_t mutex;
 };
 
-CardDetectionState current_state = OFF;
+CardDetectionState current_state = TURNED_OFF;
 int shared_memory_fd;
 struct SharedData *shared_data;
 sem_t *semaphore;
+
+void initializeMutex() {
+    // Initialize mutex attributes
+    pthread_mutexattr_t mutex_attr;
+    pthread_mutexattr_init(&mutex_attr); // Default attributes
+    pthread_mutexattr_setpshared(&mutex_attr, PTHREAD_PROCESS_SHARED); // Shared between processes
+    // if mutex is not already initialized, initialize it
+    pthread_mutex_init(&shared_data->mutex, &mutex_attr);
+}
 
 int init_system() {
     // Open or create the shared memory
@@ -49,6 +58,11 @@ int init_system() {
         perror("Error creating the semaphore");
         return 1;
     }
+    // Mutex is not initialized, initialize it
+    if (pthread_mutex_trylock(&shared_data->mutex) == 0) {
+        initializeMutex();
+        pthread_mutex_unlock(&shared_data->mutex);
+    }
     return 0;
 }
 
@@ -67,6 +81,20 @@ int turn_on() {
 
 int turn_off() {
     return change_state_when_possible(SYSTEM_TURN_OFF);
+}
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+int shutdown_system() {
+    if (!change_state_when_possible(SHUTDOWN)) return 1;
+    // We may need to wait a little bit for the card detector to turn off
+    // We may need to disconnect the sensor driver
+    // Cleanup the shared memory
+    int status = munmap(shared_data, sizeof(struct SharedData));
+    status = min( status, shm_unlink(SHARED_MEMORY_NAME));
+    status = min(status, sem_close(semaphore));
+    status = min( status, sem_unlink(SEMAPHORE_NAME));
+    exit(status);
 }
 
 // We will receive a call to this function from the sensor driver

@@ -5,10 +5,11 @@
 
 // Enumerations for states and transitions
 typedef enum {
-    OFF,
+    TURNED_OFF,
     ON_POSITIVE,
     ON_NEGATIVE,
-    FAILURE
+    FAILURE,
+    SHUTTING_DOWN
 } CardDetectionState;
 
 typedef enum {
@@ -16,6 +17,7 @@ typedef enum {
     POSITIVE_DETECTION,
     NEGATIVE_DETECTION,
     SYSTEM_TURN_OFF,
+    SHUTDOWN,
     FAILURE_DETECTION,
     FAILURE_SOLVED
 } CardDetectionStateTransition;

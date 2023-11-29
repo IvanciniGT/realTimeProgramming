@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     printf("System initialized\n");
 
     // Are we going to send any information (to communicate) to the parent process?
-    while(true) {
+    while(SHUTTING_DOWN != current_state) {
         // Heartbeat: Hey... I'm alive... and I'm doing my job
         // Imagine this process deliver this signal ^^^5 times and the OS has not allowed delivery any of them to the parent process
         // Do we want to deliver the signal 5 times? Or we just want to deliver the latest one? Just the lastONE: RT signal is gonna work perfectly here
