@@ -1,0 +1,4 @@
+/Users/ivan/CLionProjects/Queues/cmake-build-debug/CMakeFiles/Sender.dir
+/Users/ivan/CLionProjects/Queues/cmake-build-debug/CMakeFiles/Logger.dir
+/Users/ivan/CLionProjects/Queues/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivan/CLionProjects/Queues/cmake-build-debug/CMakeFiles/rebuild_cache.dir
