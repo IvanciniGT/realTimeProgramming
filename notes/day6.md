@@ -64,3 +64,14 @@ Do I want this process to be for example sending vital signs to the main system 
 3º Thread for requesting validation
 
 The point is that we need to make use of threads
+
+
+
+                      MAIN PROCESS                                      MAIN PROCESS               
+                            v                                               v            v restart signal (You don't have to mess with shared memory)
+                    start those process                                  shutdown
+         v                               v                                       
+    Card validator process          Card detection process              both will try to delete the shared memory
+         v                               v
+        Both will try to create the Shared memory
+    

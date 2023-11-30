@@ -21,6 +21,7 @@ void turn_off_signal_handler(int signo, siginfo_t *info, void *extra) {
 }
 
 void shutdown_signal_handler(int signo, siginfo_t *info, void *extra) {
+    // Is to test that that signal comes from the main process
     shutdown_system();
 }
 
