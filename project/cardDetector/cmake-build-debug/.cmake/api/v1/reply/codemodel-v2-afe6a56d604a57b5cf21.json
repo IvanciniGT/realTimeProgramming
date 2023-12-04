@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cardDetector::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cardDetector-Debug-eb324f503aff53eeebb7.json",
+					"jsonFile" : "target-cardDetector-Debug-92d9d556341eb47b1812.json",
 					"name" : "cardDetector",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "cardValidator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cardValidator-Debug-4fa104571c2964b1b78d.json",
+					"jsonFile" : "target-cardValidator-Debug-03d98e8051ac6180a2f8.json",
 					"name" : "cardValidator",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug",
-		"source" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector"
+		"build" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug",
+		"source" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
 	},
 	"version" : 
 	{

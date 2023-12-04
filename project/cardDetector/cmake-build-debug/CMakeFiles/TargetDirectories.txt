@@ -1,4 +1,4 @@
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardDetector.dir
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardValidator.dir
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardDetector.dir
+/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardValidator.dir
+/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics"
 				}
 			],
 			"language" : "C",
@@ -54,7 +54,8 @@
 				4,
 				6,
 				7,
-				10
+				10,
+				11
 			]
 		}
 	],
@@ -92,7 +93,8 @@
 				4,
 				6,
 				7,
-				10
+				10,
+				11
 			]
 		},
 		{
@@ -168,6 +170,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "card_validator_shared_memory/card_validator_shared_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main_system.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.26)
 set(CMAKE_C_STANDARD 11)
 
+project(mainSystem C)
+add_executable(mainSystem
+        main_system.c
+)
+
 project(cardDetector C)
 add_executable(cardDetector
         card_detector/main.c
