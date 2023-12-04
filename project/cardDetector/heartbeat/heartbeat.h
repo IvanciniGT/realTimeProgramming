@@ -7,6 +7,8 @@
 
 #include <sys/types.h>
 
+#define HEARTBEAT_SIGNAL  SIGUSR1
+
 void configure_heartbeat_thread(pid_t parentProcess);
 void join_heartbeat_thread();
 

@@ -1076,6 +1076,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
+		},
+		{
+			"name" : "mainSystem_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug"
+		},
+		{
+			"name" : "mainSystem_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "mainSystem_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector"
 		}
 	],
 	"kind" : "cache",

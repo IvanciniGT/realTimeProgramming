@@ -6,7 +6,6 @@
 #include "heartbeat.h"
 #include "../card_detector/card_detector.h"
 
-int const HEARTBEAT_SIGNAL = SIGUSR1;// SIGRTMAX;
 
 pid_t parent_process_to_send_heartbeat;
 pthread_t heartbeat_thread;

@@ -4,6 +4,14 @@ set(CMAKE_C_STANDARD 11)
 project(mainSystem C)
 add_executable(mainSystem
         main_system.c
+        main_system_sm.h
+        main_system_sm.c
+        heartbeat_signals_handlers.c
+        basic_control_signals/basic_control_signals.h
+        heartbeat/heartbeat.h
+        subsystems.c
+        subsystems.h
+        heartbeat_signals_handlers.h
 )
 
 project(cardDetector C)

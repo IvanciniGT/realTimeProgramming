@@ -2,10 +2,7 @@
 #include <stdio.h>
 #include <signal.h>
 #include "../card_detector/card_detector.h"
-
-int const TURN_ON_SIGNAL= SIGUSR1; //SIGRTMIN + 0;
-int const TURN_OFF_SIGNAL= SIGUSR2; //SIGRTMIN + 1;
-int const SHUTDOWN_SIGNAL= SIGQUIT;
+#include "basic_control_signals.h"
 
 void turn_on_signal_handler(int signo, siginfo_t *info, void *extra) {
     // We are just using a signal to expose a function to another process

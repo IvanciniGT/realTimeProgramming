@@ -9,18 +9,18 @@ typedef enum {
     TURNED_ON,
     FAILURE,
     SHUTTING_DOWN
-} CardDetectionState;
+} MainSystemState;
 
 typedef enum {
     SYSTEM_TURN_ON,
     SYSTEM_TURN_OFF,
     SHUTDOWN,
-    FAILURE_DETECTION,
+    FAILURE_DETECTED,
     FAILURE_SOLVED
-} CardDetectionStateTransition;
+} MainSystemStateTransition;
 
 // Function prototypes
-bool can_transition_be_executed(CardDetectionState current_state, CardDetectionStateTransition transition) ;
-int transition_to(CardDetectionState *current_state, CardDetectionStateTransition transition) ;
+bool can_transition_be_executed(MainSystemState current_state, MainSystemStateTransition transition) ;
+int transition_to(MainSystemState *current_state, MainSystemStateTransition transition) ;
 
 #endif // CARD_DETECTION_SM_H

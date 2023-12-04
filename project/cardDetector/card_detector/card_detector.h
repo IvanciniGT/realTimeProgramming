@@ -8,7 +8,7 @@
 #include "card_detector_sm.h"
 #include "../card_validator_shared_memory/card_validator_shared_memory.h"
 
-extern CardDetectionState current_state;
+extern MainSystemState current_state;
 int init_system();
 int turn_on();
 int turn_off();

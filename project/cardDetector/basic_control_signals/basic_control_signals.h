@@ -3,6 +3,11 @@
 #ifndef CARDDETECTOR_SIGNALS_H
 #define CARDDETECTOR_SIGNALS_H
 
+
+#define TURN_ON_SIGNAL SIGUSR1
+#define TURN_OFF_SIGNAL SIGUSR2
+#define SHUTDOWN_SIGNAL SIGQUIT
+
 void configure_signal_handlers() ;
 
 #endif //CARDDETECTOR_SIGNALS_H

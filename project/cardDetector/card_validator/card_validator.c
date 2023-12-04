@@ -12,7 +12,7 @@
 #define SHARED_MEMORY_NAME "/card_id"
 #define SEMAPHORE_NAME "/card_id_semaphore"
 
-CardDetectionState current_state = TURNED_OFF;
+MainSystemState current_state = TURNED_OFF;
 
 void initializeMutex() {
     // Initialize mutex attributes
@@ -62,7 +62,7 @@ int init_system() {
     return 0;
 }
 
-int change_state_when_possible(CardDetectionStateTransition transition) {
+int change_state_when_possible(MainSystemStateTransition transition) {
     int turn_on_result = 1;
     if (can_transition_be_executed(current_state, transition)) {
         turn_on_result = transition_to(&current_state, transition);
@@ -83,7 +83,7 @@ int shutdown_system() {
 }
 
 int failure() {
-    return change_state_when_possible(FAILURE_DETECTION);
+    return change_state_when_possible(FAILURE_DETECTED);
 }
 
 int failure_solved() {

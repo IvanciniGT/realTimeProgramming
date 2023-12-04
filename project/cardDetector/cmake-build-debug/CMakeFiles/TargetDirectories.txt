@@ -1,3 +1,4 @@
+/Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/mainSystem.dir
 /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardDetector.dir
 /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/cardValidator.dir
 /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/CMakeFiles/edit_cache.dir

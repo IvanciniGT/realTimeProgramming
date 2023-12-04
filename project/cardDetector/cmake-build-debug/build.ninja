@@ -41,6 +41,55 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target mainSystem
+
+
+#############################################
+# Order-only phony target for mainSystem
+
+build cmake_object_order_depends_target_mainSystem: phony || CMakeFiles/mainSystem.dir
+
+build CMakeFiles/mainSystem.dir/main_system.c.o: C_COMPILER__mainSystem_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/main_system.c || cmake_object_order_depends_target_mainSystem
+  DEP_FILE = CMakeFiles/mainSystem.dir/main_system.c.o.d
+  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/mainSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainSystem.dir
+
+build CMakeFiles/mainSystem.dir/main_system_sm.c.o: C_COMPILER__mainSystem_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/main_system_sm.c || cmake_object_order_depends_target_mainSystem
+  DEP_FILE = CMakeFiles/mainSystem.dir/main_system_sm.c.o.d
+  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/mainSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainSystem.dir
+
+build CMakeFiles/mainSystem.dir/heartbeat_signals_handlers.c.o: C_COMPILER__mainSystem_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/heartbeat_signals_handlers.c || cmake_object_order_depends_target_mainSystem
+  DEP_FILE = CMakeFiles/mainSystem.dir/heartbeat_signals_handlers.c.o.d
+  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/mainSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainSystem.dir
+
+build CMakeFiles/mainSystem.dir/start_subsystems.c.o: C_COMPILER__mainSystem_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/start_subsystems.c || cmake_object_order_depends_target_mainSystem
+  DEP_FILE = CMakeFiles/mainSystem.dir/start_subsystems.c.o.d
+  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/mainSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainSystem.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mainSystem
+
+
+#############################################
+# Link the executable mainSystem
+
+build mainSystem: C_EXECUTABLE_LINKER__mainSystem_Debug CMakeFiles/mainSystem.dir/main_system.c.o CMakeFiles/mainSystem.dir/main_system_sm.c.o CMakeFiles/mainSystem.dir/heartbeat_signals_handlers.c.o CMakeFiles/mainSystem.dir/start_subsystems.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/mainSystem.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = mainSystem
+  TARGET_PDB = mainSystem.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target cardDetector
 
 
@@ -54,56 +103,36 @@ build CMakeFiles/cardDetector.dir/card_detector/main.c.o: C_COMPILER__cardDetect
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/card_detector
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 build CMakeFiles/cardDetector.dir/card_detector/card_detector_sm.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_detector/card_detector_sm.c || cmake_object_order_depends_target_cardDetector
   DEP_FILE = CMakeFiles/cardDetector.dir/card_detector/card_detector_sm.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/card_detector
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 build CMakeFiles/cardDetector.dir/card_detector/card_detector.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_detector/card_detector.c || cmake_object_order_depends_target_cardDetector
   DEP_FILE = CMakeFiles/cardDetector.dir/card_detector/card_detector.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/card_detector
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 build CMakeFiles/cardDetector.dir/basic_control_signals/basic_control_signals.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/basic_control_signals/basic_control_signals.c || cmake_object_order_depends_target_cardDetector
   DEP_FILE = CMakeFiles/cardDetector.dir/basic_control_signals/basic_control_signals.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/basic_control_signals
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 build CMakeFiles/cardDetector.dir/heartbeat/heartbeat.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/heartbeat/heartbeat.c || cmake_object_order_depends_target_cardDetector
   DEP_FILE = CMakeFiles/cardDetector.dir/heartbeat/heartbeat.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/heartbeat
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 build CMakeFiles/cardDetector.dir/card_validator_shared_memory/card_validator_shared_memory.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator_shared_memory/card_validator_shared_memory.c || cmake_object_order_depends_target_cardDetector
   DEP_FILE = CMakeFiles/cardDetector.dir/card_validator_shared_memory/card_validator_shared_memory.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir/card_validator_shared_memory
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
-
-build CMakeFiles/cardDetector.dir/main_system.c.o: C_COMPILER__cardDetector_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/main_system.c || cmake_object_order_depends_target_cardDetector
-  DEP_FILE = CMakeFiles/cardDetector.dir/main_system.c.o.d
-  FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/cardDetector.dir
-  OBJECT_FILE_DIR = CMakeFiles/cardDetector.dir
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
-  TARGET_PDB = cardDetector.pdb
 
 
 # =============================================================================
@@ -113,14 +142,13 @@ build CMakeFiles/cardDetector.dir/main_system.c.o: C_COMPILER__cardDetector_unsc
 #############################################
 # Link the executable cardDetector
 
-build cardDetector: C_EXECUTABLE_LINKER__cardDetector_Debug CMakeFiles/cardDetector.dir/card_detector/main.c.o CMakeFiles/cardDetector.dir/card_detector/card_detector_sm.c.o CMakeFiles/cardDetector.dir/card_detector/card_detector.c.o CMakeFiles/cardDetector.dir/basic_control_signals/basic_control_signals.c.o CMakeFiles/cardDetector.dir/heartbeat/heartbeat.c.o CMakeFiles/cardDetector.dir/card_validator_shared_memory/card_validator_shared_memory.c.o CMakeFiles/cardDetector.dir/main_system.c.o
+build cardDetector: C_EXECUTABLE_LINKER__cardDetector_Debug CMakeFiles/cardDetector.dir/card_detector/main.c.o CMakeFiles/cardDetector.dir/card_detector/card_detector_sm.c.o CMakeFiles/cardDetector.dir/card_detector/card_detector.c.o CMakeFiles/cardDetector.dir/basic_control_signals/basic_control_signals.c.o CMakeFiles/cardDetector.dir/heartbeat/heartbeat.c.o CMakeFiles/cardDetector.dir/card_validator_shared_memory/card_validator_shared_memory.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/cardDetector.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/cardDetector.dir/
   TARGET_FILE = cardDetector
-  TARGET_PDB = cardDetector.pdb
+  TARGET_PDB = cardDetector.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cardValidator
@@ -136,64 +164,48 @@ build CMakeFiles/cardValidator.dir/card_validator/main.c.o: C_COMPILER__cardVali
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/card_validator/card_validator.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator/card_validator.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/card_validator/card_validator.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/card_validator/card_validator_sm.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator/card_validator_sm.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/card_validator/card_validator_sm.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/basic_control_signals/basic_control_signals.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/basic_control_signals/basic_control_signals.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/basic_control_signals/basic_control_signals.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/basic_control_signals
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/heartbeat/heartbeat.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/heartbeat/heartbeat.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/heartbeat/heartbeat.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/heartbeat
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/card_validator/card_detected.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator/card_detected.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/card_validator/card_detected.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/card_validator/card_validation_thread_pool.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator/card_validation_thread_pool.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/card_validator/card_validation_thread_pool.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 build CMakeFiles/cardValidator.dir/card_validator_shared_memory/card_validator_shared_memory.c.o: C_COMPILER__cardValidator_unscanned_Debug /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/card_validator_shared_memory/card_validator_shared_memory.c || cmake_object_order_depends_target_cardValidator
   DEP_FILE = CMakeFiles/cardValidator.dir/card_validator_shared_memory/card_validator_shared_memory.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   OBJECT_FILE_DIR = CMakeFiles/cardValidator.dir/card_validator_shared_memory
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
-  TARGET_PDB = cardValidator.pdb
 
 
 # =============================================================================
@@ -208,9 +220,8 @@ build cardValidator: C_EXECUTABLE_LINKER__cardValidator_Debug CMakeFiles/cardVal
   OBJECT_DIR = CMakeFiles/cardValidator.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/cardValidator.dir/
   TARGET_FILE = cardValidator
-  TARGET_PDB = cardValidator.pdb
+  TARGET_PDB = cardValidator.dbg
 
 
 #############################################
@@ -246,7 +257,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/cmake-build-debug
 
-build all: phony cardDetector cardValidator
+build all: phony mainSystem cardDetector cardValidator
 
 # =============================================================================
 # Built-in targets
@@ -255,14 +266,14 @@ build all: phony cardDetector cardValidator
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/ivan/Desktop/formaciones/realTimeProgramming/project/cardDetector/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

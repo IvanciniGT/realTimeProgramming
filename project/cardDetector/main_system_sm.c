@@ -1,7 +1,7 @@
 
 #include <stdbool.h>
 #include <stdio.h>
-#include "card_validator_sm.h"
+#include "main_system_sm.h"
 
 MainSystemState get_next_state(MainSystemState currentState, MainSystemStateTransition event) {
     switch (currentState) {

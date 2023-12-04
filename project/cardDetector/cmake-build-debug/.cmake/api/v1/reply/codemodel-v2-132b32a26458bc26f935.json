@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,15 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cardDetector::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cardDetector-Debug-92d9d556341eb47b1812.json",
+					"jsonFile" : "target-cardDetector-Debug-d7962660f3e9935171c2.json",
 					"name" : "cardDetector",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "cardValidator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cardValidator-Debug-03d98e8051ac6180a2f8.json",
+					"jsonFile" : "target-cardValidator-Debug-19fb07411df960b830f9.json",
 					"name" : "cardValidator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mainSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mainSystem-Debug-142aa30d5d2121c79327.json",
+					"name" : "mainSystem",
 					"projectIndex" : 0
 				}
 			]
