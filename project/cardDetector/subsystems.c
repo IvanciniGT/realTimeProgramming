@@ -10,7 +10,7 @@ int start_subsystems() {
 }
 
 int restart_subsystems(){
-
+    return 0;
 }
 
 void turn_on_subsystems() {
