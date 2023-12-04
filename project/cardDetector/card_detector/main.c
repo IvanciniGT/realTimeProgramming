@@ -27,6 +27,10 @@ int main(int argc, char *argv[]) {
     // Are we going to send any information (to communicate) to the parent process?
     while(SHUTTING_DOWN != current_state) {
         nanosleep(&VITALITY_FREQUENCY, NULL);
+        // Case we are in failure status
+        // To reset the driver
+        // We need to send a signal to the driver
+        // Try to recover the system...
     }
 
     // Join the heartbeat thread

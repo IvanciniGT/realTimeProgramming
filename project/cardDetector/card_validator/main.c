@@ -20,13 +20,13 @@ int main(int argc, char *argv[]) {
     printf("Initializing card validator with parent process id: %d\n", parentProcessId);
     init_system();
     // The parent process is gonna be able to communicate with this process through signals
-    configure_signal_handlers();
+    configure_signal_handlers();                                 // Turn on, turn off, shutdown
     printf("System initialized\n");
 
     // Init the heartbeat thread
-    configure_heartbeat_thread(parentProcessId);
-    configure_look_for_card_detected_thread();
+    configure_heartbeat_thread(parentProcessId);    // heartbeat
     configure_validation_thread_pool();
+    configure_look_for_card_detected_thread();                  // new thread to check the shared memory for a new card detected event
 
     // Are we going to send any information (to communicate) to the parent process?
     while(SHUTTING_DOWN != current_state) {
